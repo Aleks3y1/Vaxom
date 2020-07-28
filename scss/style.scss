@@ -1,0 +1,10 @@
+@mixin wrp-size($wsize, $hsize) {
+    width: $wsize;
+    height: $hsize;
+}
+
+.header-top {
+    background-color: rgba(17,17,17,0.7);
+    background-image: url(../img/photo.jpg);
+    @include wrp-size(1920px, 1024px);
+}
