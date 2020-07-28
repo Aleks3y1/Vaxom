@@ -1,10 +1,38 @@
 @mixin wrp-size($wsize, $hsize) {
     width: $wsize;
-    height: $hsize;
+    min-height: $hsize;
+}
+
+@mixin display-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@mixin text($size, $height, $weight, $color) {
+    font-size: $size;
+    line-height: $height;
+    font-weight: $weight;
+    color: $color;
+}
+
+body {
+    margin: 0;
 }
 
 .header-top {
     background-color: rgba(17,17,17,0.7);
     background-image: url(../img/photo.jpg);
-    @include wrp-size(1920px, 1024px);
+    @include wrp-size(100%, 1024px);
+    @include display-flex();
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.header-logo {
+    text-decoration: none;
+    @include text(34px, 1.2, 400, #ffffff);
+    letter-spacing: -0.04em;
+    font-family: Raleway;
 }
