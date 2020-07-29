@@ -9,18 +9,67 @@ body {
   min-height: 1024px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   background-repeat: no-repeat;
-  background-size: contain;
+  align-items: flex-start;
+}
+
+.header-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px 0 0 0;
+  height: 58px;
 }
 
 .header-logo {
-  text-decoration: none;
+  font-family: Raleway;
   font-size: 34px;
   line-height: 1.2;
   font-weight: 400;
   color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-decoration: none;
   letter-spacing: -0.04em;
-  font-family: Raleway;
+  padding: 40px 0 0 0;
+  height: 58px;
+  align-items: center;
+}
+
+.header-navbar__ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 18px 0 0 0;
+}
+.header-navbar__ul .header-navbar__li {
+  margin: 0 30px 0 0;
+}
+.header-navbar__ul .header-navbar__li:nth-child(9) {
+  padding: 0 0 0 63px;
+}
+.header-navbar__ul .header-navbar__li .header-navbar__link {
+  text-decoration: none;
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #ffffff;
+}
+.header-navbar__ul .header-navbar__li .header-navbar__link:hover {
+  color: #c7b299;
+}
+.header-navbar__ul .header-content {
+  width: 100%;
+  min-height: 650px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
