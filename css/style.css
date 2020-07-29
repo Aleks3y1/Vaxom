@@ -66,10 +66,12 @@ body {
 .header-navbar__ul .header-navbar__li .header-navbar__link:hover {
   color: #c7b299;
 }
-.header-navbar__ul .header-content {
+
+.header-content {
   width: 100%;
   min-height: 650px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
