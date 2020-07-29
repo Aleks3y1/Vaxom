@@ -77,11 +77,10 @@ body {
             }
         }
     }
+}
 .header-content {
     @include wrp-size(100%, 650px);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-}
-    
 }
