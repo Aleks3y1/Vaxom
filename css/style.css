@@ -330,3 +330,116 @@ body {
   min-height: 15px;
   background-color: rgba(255, 255, 255, 0);
 }
+
+.main-content {
+  margin: 0 auto;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 1920px;
+  min-height: 373px;
+  max-width: 100%;
+}
+
+.features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 1920px;
+  max-width: 100%;
+}
+.features .features-element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 286px;
+  min-height: 220px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.features .features-element:after {
+  content: "";
+  width: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f1eee9;
+  height: 3px;
+}
+.features .features-element .features-element-icon {
+  margin: 0 0 29px 0;
+}
+.features .features-element .features-element-h3 {
+  font-family: Raleway;
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #555555;
+}
+.features .features-element .features-element-txt {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #8c8c8c;
+  display: block;
+  text-align: center;
+  margin: 19px 0 30px 0;
+}
+.features .features-element:hover .features-element-icon {
+  fill: #c7b299;
+}
+.features .features-element:hover .features-element-h3 {
+  color: #c7b299;
+}
+.features .features-element:hover:after {
+  background-color: #c7b299;
+}
+.features .element-active .icon-active {
+  fill: #c7b299;
+}
+.features .element-active .txt-active {
+  color: #c7b299;
+}
+.features .element-active:after {
+  content: "";
+  width: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #c7b299;
+  height: 3px;
+}
