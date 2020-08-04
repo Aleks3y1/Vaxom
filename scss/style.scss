@@ -20,12 +20,19 @@
 
 body {
     margin: 0 auto;
+    width: 1920px;
+}
+
+*::before,
+::after,
+:active {
+    transition: 0.4s;
 }
 
 .header-top {
     background-color: rgba(17,17,17,0.7);
     background-image: url(../img/photo.jpg);
-    @include wrp-size(1920px, 1024px);
+    @include wrp-size(100%, 1024px);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -34,6 +41,7 @@ body {
     background-repeat: no-repeat;
     align-items: flex-start;
     max-width: 100%;
+    background-size: cover;
 }
 
 .header-navbar {
@@ -114,6 +122,7 @@ body {
 }
 .header-content {
     @include wrp-size(100%, 650px);
+    padding: 380px 150px 40px 150px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -127,17 +136,39 @@ body {
 .header-content__left {
     display: flex;
     justify-content: center;
-    @include wrp-size(40px, 73px);
+    @include wrp-size(45px, 75px);
     text-decoration: none;
-    padding: 0 0 0 150px;
+    padding: 0;
+    background-image: url(../img/arrow_left.svg);
+    background-size: cover;
+    color: #ffffff;
+    opacity: 0.5;
+    &:hover {
+        opacity: 1;
+    }
+    &:active {
+        opacity: 1;
+        transform: scale(1.2);
+    }
 }
 
 .header-content__right {
     display: flex;
     justify-content: center;
-    @include wrp-size(40px, 73px);
+    @include wrp-size(45px, 75px);
     text-decoration: none;
-    padding: 0 150px 0 0;
+    padding: 0;
+    background-image: url(../img/arrow_right.svg);
+    background-size: cover;
+    color: #ffffff;
+    opacity: 0.5;
+    &:hover {
+        opacity: 1;
+    }
+    &:active {
+        opacity: 1;
+        transform: scale(1.2);
+    }
 }
 
 .fontello-icon-header {
@@ -206,29 +237,30 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 0 0 40px 0;
     .carusel {
         // display: flex;
         @include wrp-size(11px, 11px);
-        background-color: rgba(255,255,255,0.5);
+        background-color: #ffffff;
+        opacity: 0.5;
         border-radius: 50%;
         margin: 0 10px 0 0;
+        display: block;
+        box-sizing: border-box;
         &:nth-child(5) {
             margin: 0;
         }
         &:hover {
-            background-color: #d3c1ad;
+            transform: scale(1.4);
+            border: 2px solid #d3c1ad;
+            background-color: transparent;
+            opacity: 1;
+            box-sizing: border-box;   
         }
         &:active {
             border: 2px solid #d3c1ad;
-            @include wrp-size(15px, 15px);
+            transform: scale(1.2);
             background-color: rgba(255,255,255,0);
         }
-    }
-    .active {
-        border: 2px solid #d3c1ad;
-        @include wrp-size(15px, 15px);
-        background-color: rgba(255,255,255,0);
     }
 }
 
@@ -245,12 +277,13 @@ body {
 .features {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
     align-content: center;
     width: 1920px;
     max-width: 100%;
+    padding: 80px 375px 80px 375px;
     .features-element {
         display: flex;
         flex-direction: column;
@@ -259,6 +292,7 @@ body {
         justify-content: center;
         @include wrp-size(286px, 220px);
         box-sizing: border-box;
+        max-width: 266px;
         &:after {
             content: "";
             width: 70px;
@@ -267,16 +301,18 @@ body {
             height: 3px;
         }
         .features-element-icon {
-            margin: 0 0 29px 0;
+            margin: 0 0 30px 0;
+            fill: #555555;
         }
         .features-element-h3 {
             @include text(Raleway, 22px, 1.2, 600, #555555);
+            margin: 0 0 20px 0;
         }
         .features-element-txt {
             @include text(Montserrat, 14px, 24px, 300, #8c8c8c);
             display: block;
             text-align: center;
-            margin: 19px 0 30px 0;
+            margin: 0 0 30px 0;
         }
         &:hover .features-element-icon {
             fill: #c7b299;
@@ -286,21 +322,6 @@ body {
         }
         &:hover:after {
             background-color: #c7b299;
-        }
-    }
-    .element-active {
-        .icon-active {
-            fill:#c7b299;
-        }
-        .txt-active {
-            color: #c7b299;
-        }
-        &:after {
-            content: "";
-            width: 70px;
-            display: flex;
-            background-color: #c7b299;
-            height: 3px;
         }
     }
 }
