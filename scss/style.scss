@@ -121,8 +121,8 @@ body {
     }
 }
 .header-content {
-    @include wrp-size(100%, 650px);
-    padding: 380px 150px 40px 150px;
+    @include wrp-size(100%, 600px);
+    padding: 0 150px 40px 150px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -266,11 +266,10 @@ body {
 
 .main-content {
     margin: 0 auto;
-    margin: 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    @include wrp-size(1920px, 373px);
+    width: 1920px;
     max-width: 100%;
 }
 
@@ -322,6 +321,150 @@ body {
         }
         &:hover:after {
             background-color: #c7b299;
+        }
+    }
+}
+
+.ideas {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    background-color: #fbfaf8;
+    width: 100%;
+    padding: 80px 345px 0 345px;
+    .ideas-h2 {
+        @include text(Raleway, 30px, 1.2, 600, #555555);
+        display: block;
+        width: 100%;
+        margin: 0 0 24px 0;
+    }
+    .ideas-txt {
+        @include text(Montserrat, 16px, 28px, 300, #8c8c8c);
+        display: block;
+        max-width: 757px;
+        margin: 0 0 40px 0;
+    }
+    .ideas-img {
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        margin: 0;
+        justify-content: center;
+        width: 100%;
+        .ideas-img__left {
+            position: absolute;
+            left: 0;
+            z-index: 1;
+            &:hover {
+                z-index: 3;
+            }
+        }
+        .ideas-img__center {
+            position: relative;
+            z-index: 2;
+        }
+        .ideas-img__right {
+            position: absolute;
+            right: 0;
+            z-index: 1;
+            &:hover {
+                z-index: 3;
+            }
+        }
+    }
+}
+.purchase {
+    @include wrp-size(100%, 150px);
+    background-color: #f4f5f8;
+    background-image: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%);
+    display: flex;
+    justify-content: space-between;
+    .purchase-wrp {
+        padding: 48px 0 48px 375px;
+        .purchase-h2 {
+            @include text(Raleway, 28px, 1.2, 400, #ffffff);
+        }
+        .purchase-h2__brown {
+            color: #c7b299;
+        }
+        .purchase-txt {
+            margin: 0;
+            @include text(Montserrat, 18px, 1.2, 300, #615855);
+        }
+    }
+    .btn-link-purchase {
+        width: 170px;
+        min-height: 53px;
+        background-color: #998675;
+        border-radius: 3px;
+        text-transform: uppercase;
+        text-decoration: none;
+        word-break: break-all;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        @include text(Raleway, 14px, 23px, 800, #ffffff);
+        margin: 50px 375px 50px 0;
+        &:hover {
+            background-color: #ffffff;
+            color: #998675;
+        }
+        &:active {
+            background-color: #998675;
+            color: #ffffff;
+        }
+    }
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    .projects-h2 {
+        @include text(Raleway, 30px, 1.2, 600, #555);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 80px 0 24px 0;
+    }
+    .projects-txt {
+        @include text(Montserrat, 16px, 28px, 300, #8c8c8c);
+        margin: 0 0 40px 0;
+        width: 757px;
+        display: block;
+        text-align: center;
+    }
+    .projects-category {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .projects-category-btn {
+            @include text(Montserrat, 14px, 21px, 300, #8c8c8c);
+            text-decoration: none;
+            margin: 0 10px 0 0;
+            border: 1px solid #ebebeb;
+            border-radius: 3px;
+            min-height: 32px;
+            display: flex;
+            align-items: center;
+            &:nth-child(5) {
+                margin: 0;
+            }
+            .projects-category-btn-txt {
+                padding: 0 21px 0 21px;
+            }
+            &:hover {
+                background-color: #998675;
+                color: #fff;
+            }
+            &:active {
+                background-color: #fff;
+                color: #8c8c8c;
+            }
         }
     }
 }
