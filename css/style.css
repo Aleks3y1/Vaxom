@@ -833,3 +833,228 @@ button {
   font-weight: 400;
   color: #c7b299;
 }
+
+.mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-height: 695px;
+}
+
+.mobile-img {
+  margin: 0 0 0 423px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.mobile-h2 {
+  font-family: Raleway;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #555555;
+}
+
+.mobile-txt {
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+  color: #8c8c8c;
+  margin: 0;
+  margin: 40px 0 0 0;
+  max-width: 658px;
+}
+
+.mobile__ul {
+  list-style-type: none;
+  margin: 45px 0 0 0;
+}
+
+.mobile__li {
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 300;
+  color: #8c8c8c;
+}
+
+.mobile__li-img {
+  margin: 0 29px 0 0;
+  position: relative;
+  top: 5px;
+}
+
+.stat {
+  width: 100%;
+  min-height: 300px;
+  background-color: #f4f5f8;
+  background-image: -webkit-gradient(linear, left top, right top, from(#211b19), to(#4e3427));
+  background-image: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.stat-elem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  padding: 69px 0 60px 0;
+  width: 180px;
+}
+.stat-elem:after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #ffffff;
+  margin: 30px 0 0 0;
+}
+
+.stat-img {
+  fill: #c7b299;
+  margin: 0 0 30px 0;
+}
+
+.stat-title {
+  font-family: Montserrat;
+  font-size: 48px;
+  line-height: 36px;
+  font-weight: 200;
+  color: #ffffff;
+  width: 100%;
+}
+
+.stat-txt {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #c7b299;
+  text-transform: uppercase;
+  width: 100%;
+  margin: 21px 0 0 0;
+}
+
+.posts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  min-height: 735px;
+}
+
+.posts-h2 {
+  font-family: Raleway;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #555555;
+  padding: 82px 0 0 0;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.posts-txt {
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+  color: #8c8c8c;
+  width: 758px;
+  display: block;
+  text-align: center;
+}
+
+.posts-content {
+  width: 370px;
+  min-height: 395px;
+  border: 1px solid #f8f8f8;
+  position: relative;
+}
+
+.posts-content-h2 {
+  font-family: Raleway;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #555555;
+  margin: 30px 0 0 29px;
+}
+
+.posts-content-txt {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 300;
+  color: #8c8c8c;
+  margin: 19px 0 27px 29px;
+}
+
+.posts-content-bottom {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #c7b299;
+  margin: 0 0 0 29px;
+}
+
+.date {
+  position: absolute;
+  text-align: center;
+  top: 20px;
+  left: 20px;
+}
+
+.date-num {
+  font-family: Montserrat;
+  font-size: 24px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #ffffff;
+  width: 50px;
+  background-color: #363636;
+  border-radius: 3px 3px 0px 0px;
+  margin: 0;
+  padding: 9px 0 9px 0;
+  display: block;
+}
+
+.date-m {
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  width: 50px;
+  background-color: #252525;
+  border-radius: 0px 0px 3px 3px;
+  margin: 0;
+  padding: 7px 0 7px 0;
+  display: block;
+}

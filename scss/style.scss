@@ -622,3 +622,159 @@ button {
 .video-timer {
     @include text(Montserrat, 14px, 24px, 400, #c7b299);
 }
+
+.mobile {
+    display: flex;
+    align-items: center;
+    @include wrp-size(100%, 695px);
+}
+
+.mobile-img {
+    margin: 0 0 0 423px;
+    align-self: flex-end;
+}
+
+.mobile-h2 {
+    @include text(Raleway, 30px, 1.2, 600, #555555);
+}
+
+.mobile-txt {
+    @include text(Montserrat, 16px, 28px, 300, #8c8c8c);
+    margin: 0;
+    margin: 40px 0 0 0;
+    max-width: 658px;
+}
+
+.mobile__ul {
+    list-style-type: none;
+    margin: 45px 0 0 0;
+}
+
+.mobile__li {
+    @include text(Montserrat, 16px, 32px, 300, #8c8c8c);
+}
+
+.mobile__li-img {
+    margin: 0 29px 0 0;
+    position: relative;
+    top: 5px;
+}
+
+.stat {
+    @include wrp-size(100%, 300px);
+    background-color: #f4f5f8;
+    background-image: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%);
+    display: flex;
+    justify-content: center;
+}
+
+.stat-elem {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 69px 0 60px 0;
+    width: 180px;
+    &:after {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: #ffffff;
+        margin: 30px 0 0 0;       
+    }
+}
+
+.stat-img {
+    fill: #c7b299;
+    margin: 0 0 30px 0;
+}
+
+.stat-title {
+    @include text(Montserrat, 48px, 36px, 200, #ffffff);
+    width: 100%;
+}
+
+.stat-txt {
+    @include text(Montserrat, 14px, 20px, 300, #c7b299);
+    text-transform: uppercase;
+    width: 100%;
+    margin: 21px 0 0 0;
+}
+
+.posts {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    @include wrp-size(100%, 735px);
+}
+
+.posts-h2 {
+    @include text(Raleway, 30px, 1.2, 600, #555555);
+    padding: 82px 0 0 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.posts-txt {
+    @include text(Montserrat, 16px, 28px, 300, #8c8c8c);
+    width: 758px;
+    display: block;
+    text-align: center;
+}
+
+.posts-content {
+    @include wrp-size(370px, 395px);
+    border: 1px solid #f8f8f8;
+    position: relative;
+}
+
+.posts-content-h2 {
+    @include text(Raleway, 20px, 1.2, 500, #555555);
+    margin: 30px 0 0 29px;
+}
+
+.posts-content-txt {
+    @include text(Montserrat, 14px, 22px, 300, #8c8c8c);
+    margin: 19px 0 27px 29px;
+}
+
+.posts-content-bottom {
+    @include text(Montserrat, 14px, 20px, 300, #c7b299);
+    margin: 0 0 0 29px;
+    // &:after {
+    //     content: "";
+    //     display: block;
+    //     background-image: url(../img/read_more.png);
+    //     @include wrp-size(5px, 8px);
+    // }
+}
+
+.date {
+    position: absolute;
+    text-align: center;
+    top: 20px;
+    left: 20px;
+}
+
+.date-num {
+    @include text(Montserrat, 24px, 20px, 300, #ffffff);
+    width: 50px;
+    background-color: #363636;
+    border-radius: 3px 3px 0px 0px;    
+    margin: 0;
+    padding: 9px 0 9px 0;
+    display: block;
+}
+
+.date-m {
+    @include text(Roboto, 12px, 20px, 400, #ffffff);
+    width: 50px;
+    background-color: #252525;
+    border-radius: 0px 0px 3px 3px;
+    margin: 0;
+    padding: 7px 0 7px 0;
+    display: block; 
+}
