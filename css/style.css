@@ -760,10 +760,20 @@ button {
 }
 .gallery-pic .card {
   margin: 0 30px 30px 0;
-  padding: 0;
+  padding: 0 0 0 0;
   background-color: #fbfaf8;
-  position: relative;
   overflow: hidden;
+  position: relative;
+}
+.gallery-pic .card:nth-child(3n) {
+  margin: 0 0 30px 0;
+}
+.gallery-pic .card:hover:after {
+  top: 0;
+}
+.gallery-pic .card:hover {
+  background-color: #362f2d;
+  position: relative;
 }
 .gallery-pic .card:after {
   content: '';
@@ -788,17 +798,52 @@ button {
   background-color: #111;
   z-index: 1;
 }
-.gallery-pic .card:hover {
-  background-color: #362f2d;
-  position: relative;
+.gallery-pic .card:hover .card-btn {
+  top: 32%;
 }
-.gallery-pic .card:nth-child(3n) {
-  margin: 0 0 30px 0;
+.gallery-pic .card:hover .card-title {
+  color: #fff;
 }
-.gallery-pic .card .card-img {
+.gallery-pic .card:hover .card-subtitle {
+  color: #c7b299;
+}
+.gallery-pic .card:hover .card-body:before {
+  border-bottom: 10px solid #362f2d;
+}
+.gallery-pic .card-img {
   display: block;
 }
-.gallery-pic .card .card-body {
+.gallery-pic .card-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0 0 0 0;
+  top: -100px;
+  position: absolute;
+  z-index: 2;
+}
+.gallery-pic .card-btn-link:hover {
+  background-image: url("../img/link-h.svg");
+}
+.gallery-pic .card-btn-link,
+.gallery-pic .card-btn-link:active {
+  background-image: url("../img/link.svg");
+  background-size: cover;
+  left: 40%;
+  height: 28px;
+  width: 28px;
+}
+.gallery-pic .card-btn-search:hover {
+  background-image: url("../img/search-h.svg");
+}
+.gallery-pic .card-btn-search,
+.gallery-pic .card-btn-search:active {
+  background-image: url("../img/search.svg");
+  background-size: cover;
+  right: 40%;
+  height: 27px;
+  width: 29px;
+}
+.gallery-pic .card-body {
   text-align: left;
   padding: 30px 0 30px 30px;
   position: relative;
@@ -806,31 +851,31 @@ button {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-.gallery-pic .card .card-body::before {
+.gallery-pic .card-body:before {
   content: '';
   position: absolute;
   background-color: transparent;
-  top: -8px;
+  top: -10px;
   left: 20px;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
   border-bottom: 10px solid #fbfaf8;
 }
-.gallery-pic .card .card-body .card-title {
-  font-family: Raleway;
+.gallery-pic .card-title {
+  margin: 0 0 0 0;
+  font-family: 'Raleway', sans-serif;
   font-size: 20px;
   line-height: 1.2;
   font-weight: 500;
   color: #c7b299;
-  margin: 0;
 }
-.gallery-pic .card .card-body .card-subtitle {
-  font-family: Montserrat;
+.gallery-pic .card-subtitle {
+  margin: 0 0 0 0;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 300;
   color: #d1d1d1;
-  margin: 0;
 }
 
 .video {
@@ -1411,6 +1456,10 @@ button {
 }
 .links-item:last-child, .links-item-link:last-child {
   border: none;
+}
+
+.links-item-link:hover, .brand:hover {
+  color: #c7b299;
 }
 
 .brand {
